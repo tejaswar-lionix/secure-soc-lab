@@ -1,0 +1,11 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+[project]
+name = "sentinel-soc-lab"
+version = "1.0.0"
+description = "Sentinel SOC Lab"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "Proprietary"}
+dependencies = ["Django","djangorestframework"]
