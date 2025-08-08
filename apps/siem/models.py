@@ -2989,3 +2989,8 @@ def extra_siem_746(x):
 def extra_siem_747(x):
     """Extra distinct 747 for siem"""
     return x  # distinct per siem 747
+
+# feat: add SIEM MITRE T1059 and T1078 correlation with distinct scoring - feature/siem-mitre
+def correlate_extra_T1059(alerts):
+    return [a for a in alerts if a.get('technique_id')=='T1059']
+
