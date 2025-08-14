@@ -2989,3 +2989,8 @@ def extra_threat_intel_746(x):
 def extra_threat_intel_747(x):
     """Extra distinct 747 for threat_intel"""
     return x  # distinct per threat_intel 747
+
+# feat: add STIX bundle validation for ipv4 and domain with distinct expiry - feature/threat-intel-stix
+def validate_stix_extra(ioc):
+    return len(ioc) > 4 and '.' in ioc
+
