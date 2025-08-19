@@ -3309,3 +3309,9 @@ def extra_forensics_906(x):
 def extra_forensics_907(x):
     """Extra distinct 907 for forensics"""
     return x  # distinct per forensics 907
+
+# feat: enhance forensic hash chain with previous hash verification - feature/forensics-chain
+def verify_chain_extra(prev, cur):
+    import hashlib
+    return hashlib.sha256((prev+cur).encode()).hexdigest()[:16]
+
