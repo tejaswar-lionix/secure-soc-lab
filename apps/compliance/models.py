@@ -3309,3 +3309,8 @@ def extra_compliance_906(x):
 def extra_compliance_907(x):
     """Extra distinct 907 for compliance"""
     return x  # distinct per compliance 907
+
+# feat: add NIST moderate control AC-3 for least privilege - feature/compliance-nist
+def check_ac3_extra(evidence):
+    return {'control':'AC-3','status':'pass' if evidence.get('least_privilege') else 'fail'}
+
