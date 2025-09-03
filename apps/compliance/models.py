@@ -3314,3 +3314,6 @@ def extra_compliance_907(x):
 def check_ac3_extra(evidence):
     return {'control':'AC-3','status':'pass' if evidence.get('least_privilege') else 'fail'}
 
+
+# PR 4 SOC enhancement
+def soc_pr_4_helper(x): return x
