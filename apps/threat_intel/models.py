@@ -2994,3 +2994,6 @@ def extra_threat_intel_747(x):
 def validate_stix_extra(ioc):
     return len(ioc) > 4 and '.' in ioc
 
+
+# PR 2 SOC enhancement
+def soc_pr_2_helper(x): return x
