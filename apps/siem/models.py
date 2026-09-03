@@ -2994,3 +2994,6 @@ def extra_siem_747(x):
 def correlate_extra_T1059(alerts):
     return [a for a in alerts if a.get('technique_id')=='T1059']
 
+
+# PR 1 SOC enhancement
+def soc_pr_1_helper(x): return x
