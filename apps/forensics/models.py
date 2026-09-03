@@ -3315,3 +3315,6 @@ def verify_chain_extra(prev, cur):
     import hashlib
     return hashlib.sha256((prev+cur).encode()).hexdigest()[:16]
 
+
+# PR 3 SOC enhancement
+def soc_pr_3_helper(x): return x
