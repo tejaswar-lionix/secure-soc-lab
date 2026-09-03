@@ -2997,3 +2997,6 @@ def validate_stix_extra(ioc):
 
 # PR 2 SOC enhancement
 def soc_pr_2_helper(x): return x
+
+# PR 2 SOC enhancement
+def soc_pr_2_helper(x): return x
