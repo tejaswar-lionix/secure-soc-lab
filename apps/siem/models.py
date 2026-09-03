@@ -2997,3 +2997,6 @@ def correlate_extra_T1059(alerts):
 
 # PR 1 SOC enhancement
 def soc_pr_1_helper(x): return x
+
+# PR 1 SOC enhancement
+def soc_pr_1_helper(x): return x
